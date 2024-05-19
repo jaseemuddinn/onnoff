@@ -142,13 +142,13 @@ const FloatingText = () => {
 
   return (
     <div className="flex w-full items-center overflow-hidden" ref={containerRef}>
-      <motion.span
+      {/* <motion.span
         className="bottom-0 left-0 mx-auto whitespace-nowrap text-center font-bold uppercase text-black"
         ref={textRef}
         animate={controls}
       >
         CONTACT US
-      </motion.span>
+      </motion.span> */}
     </div>
   );
 };
