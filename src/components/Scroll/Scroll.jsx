@@ -8,8 +8,8 @@ const TrippyScroll = () => {
     target: targetRef,
   });
 
-  const rotate = useTransform(scrollYProgress, [0, 1], ["0deg", "20deg"]);
-  const scale = useTransform(scrollYProgress, [0.5, 1], [1, 10]);
+  const rotate = useTransform(scrollYProgress, [0, 1], ["0deg", "15deg"]);
+  const scale = useTransform(scrollYProgress, [0.5, 1], [1, 20]);
 
 
   return (
