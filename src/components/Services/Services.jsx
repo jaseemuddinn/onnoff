@@ -7,12 +7,12 @@ const Services = () => {
     <div className="bg-white">
       <TextParallaxContent
         imgUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        subheading="What we do"
+        // subheading="What we do"
         heading="Services"
       ></TextParallaxContent>
       <TextParallaxContent
         imgUrl="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        subheading="Modern"
+        // subheading="Modern"
         heading="WEB SOLUTIONS"
       >
         <Content
@@ -24,7 +24,7 @@ const Services = () => {
       </TextParallaxContent>
       <TextParallaxContent
         imgUrl="https://images.unsplash.com/photo-1504610926078-a1611febcad3?q=80&w=2416&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        subheading="Modern"
+        // subheading="Modern"
         heading="MOBILE APP SOLUTIONS"
       >
         <Content
@@ -36,7 +36,7 @@ const Services = () => {
       </TextParallaxContent>
       <TextParallaxContent
         imgUrl="https://images.unsplash.com/photo-1504610926078-a1611febcad3?q=80&w=2416&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        subheading="BEST"
+        // subheading="BEST"
         heading="BRAND DEVELOPMENT"
       >
         <Content
@@ -138,7 +138,7 @@ const Content = ({ heading, desc, desc2 }) => (
       <p className="mb-4 text-xl text-neutral-600 md:text-2xl">{desc}</p>
       <p className="mb-8 text-xl text-neutral-600 md:text-2xl">{desc2}</p>
       <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
-        Learn more <FiArrowUpRight className="inline" />
+        Contact Us <FiArrowUpRight className="inline" />
       </button>
     </div>
   </div>
