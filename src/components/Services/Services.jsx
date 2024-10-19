@@ -112,6 +112,8 @@ const OverlayCopy = ({ subheading, heading }) => {
   const y = useTransform(scrollYProgress, [0, 1], [250, -250]);
   const opacity = useTransform(scrollYProgress, [0.25, 0.5, 0.75], [0, 1, 0]);
 
+  
+
   return (
     <motion.div
       style={{
@@ -129,6 +131,11 @@ const OverlayCopy = ({ subheading, heading }) => {
   );
 };
 
+const handleClick = () => {
+  window.location.href = "mailto:contact@onnoff.in", "_blank";
+}
+
+
 const Content = ({ heading, desc, desc2 }) => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
     <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
@@ -137,9 +144,11 @@ const Content = ({ heading, desc, desc2 }) => (
     <div className="col-span-1 md:col-span-8">
       <p className="mb-4 text-xl text-neutral-600 md:text-2xl">{desc}</p>
       <p className="mb-8 text-xl text-neutral-600 md:text-2xl">{desc2}</p>
-      <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
+      <a href="mailto:contact@onnoff.in">
+      <button onClick={handleClick} className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
         Contact Us <FiArrowUpRight className="inline" />
       </button>
+      </a>
     </div>
   </div>
 );

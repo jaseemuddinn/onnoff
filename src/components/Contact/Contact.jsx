@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { SiGmail, SiLinkedin, SiInstagram, SiX, SiDiscord, SiTelegram, SiFacebook, SiYoutube, SiMedium } from 'react-icons/si';
+import { IoCallOutline } from "react-icons/io5";
 
 const NO_CLIP = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)";
 const BOTTOM_RIGHT_CLIP = "polygon(0 0, 100% 0, 0 0, 0% 100%)";
@@ -159,10 +160,10 @@ const Contact = () => {
       <FloatingText />
       <div className="divide-y divide-neutral-900 border border-neutral-900">
         <div className="grid grid-cols-2 divide-x divide-neutral-900">
-          <LinkBox Icon={SiGmail} href="#" />
-          <LinkBox Icon={SiLinkedin} href="#" />
+          <LinkBox Icon={SiGmail} href="mailto:contact@onnoff.in" />
+          <LinkBox Icon={IoCallOutline} href="tel:8800000567" />
         </div>
-        <div className="grid grid-cols-4 divide-x divide-neutral-900">
+        {/* <div className="grid grid-cols-4 divide-x divide-neutral-900">
           <LinkBox Icon={SiInstagram} href="#" />
           <LinkBox Icon={SiX} href="#" />
           <LinkBox Icon={SiDiscord} href="#" />
@@ -172,7 +173,7 @@ const Contact = () => {
           <LinkBox Icon={SiFacebook} href="#" />
           <LinkBox Icon={SiYoutube} href="#" />
           <LinkBox Icon={SiMedium} href="#" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

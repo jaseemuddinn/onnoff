@@ -42,6 +42,9 @@ export default {
         "error-content": "#eebbbb"
       },
     },
+    fontFamily: {
+      sans:['Montserrat', 'sans-serif'],
+    }
   },
   plugins: [],
 }

@@ -68,7 +68,7 @@ const Section = ({ background, children, rotate, scale }) => {
 const Logo = ({ scrollYProgress }) => {
     // const opacity = useTransform(scrollYProgress, [0.9, 1], [0, 1]);
     const opacity = useTransform(scrollYProgress, [0.5, 0.7], [0, 1]);
-    const scale = useTransform(scrollYProgress, [0.90, 1], [1, 0]);
+    const scale = useTransform(scrollYProgress, [0, 0.90, 1], [0, 1, 0]);
   
     return (
       <motion.div
@@ -81,10 +81,9 @@ const Logo = ({ scrollYProgress }) => {
         animate={{ scale: 1 }}
         transition={{ duration: 0.5, delay: 0.5}}
       >
-        <img src={logo} alt="Logo" className="w-20" />
+        <img src={logo} alt="Logo" className="w-25" />
       </motion.div>
     );
   };
 
 export default TrippyScroll;
-

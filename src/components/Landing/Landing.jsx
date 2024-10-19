@@ -44,6 +44,10 @@ const Landing = () => {
     }
   }, [controls, inView]);
 
+  const handleClick = () => {
+    window.location.href = "mailto:contact@onnoff.in", "_blank";
+  }
+
 
   return (
     <motion.section
@@ -53,7 +57,7 @@ const Landing = () => {
       className="relative grid place-content-center overflow-hidden bg-black px-4 pt-32 text-gray-200"
     >
       <div className="relative z-10 flex flex-col items-center">
-        <h1 className="max-w-7xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-3xl font-bold leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:px-10 lg:px-0 lg:text-9xl md:leading-tight mb-2 md:mb-5">
+        <h1 className="font-Montserra max-w-7xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-3xl font-bold leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:px-10 lg:px-0 lg:text-9xl md:leading-tight mb-2 md:mb-5">
           TRANSFORMING IDEAS INTO REALITY
         </h1>
         {/* <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed">
@@ -70,6 +74,7 @@ const Landing = () => {
           whileTap={{
             scale: 0.985,
           }}
+          onClick={handleClick}
           className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50"
         >
           Contact Us
