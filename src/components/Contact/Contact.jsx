@@ -1,6 +1,16 @@
-import React, { useEffect, useRef } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { SiGmail, SiLinkedin, SiInstagram, SiX, SiDiscord, SiTelegram, SiFacebook, SiYoutube, SiMedium } from 'react-icons/si';
+import React, { useEffect, useRef } from "react";
+import { motion, useAnimation } from "framer-motion";
+import {
+  SiGmail,
+  SiLinkedin,
+  SiInstagram,
+  SiX,
+  SiDiscord,
+  SiTelegram,
+  SiFacebook,
+  SiYoutube,
+  SiMedium,
+} from "react-icons/si";
 import { IoCallOutline } from "react-icons/io5";
 
 const NO_CLIP = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)";
@@ -103,8 +113,8 @@ const FloatingText = () => {
 
   useEffect(() => {
     resizeText();
-    window.addEventListener('resize', resizeText);
-    return () => window.removeEventListener('resize', resizeText);
+    window.addEventListener("resize", resizeText);
+    return () => window.removeEventListener("resize", resizeText);
   }, []);
 
   const resizeText = () => {
@@ -119,7 +129,7 @@ const FloatingText = () => {
 
     while (min <= max) {
       const mid = Math.floor((min + max) / 2);
-      text.style.fontSize = mid + 'px';
+      text.style.fontSize = mid + "px";
 
       if (text.offsetWidth <= containerWidth) {
         min = mid + 1;
@@ -128,7 +138,7 @@ const FloatingText = () => {
       }
     }
 
-    text.style.fontSize = max + 'px';
+    text.style.fontSize = max + "px";
 
     // Set the animation
     // controls.start({
@@ -142,14 +152,17 @@ const FloatingText = () => {
   };
 
   return (
-    <div className="flex w-full items-center overflow-hidden" ref={containerRef}>
+    <div
+      className="flex w-full items-center overflow-hidden"
+      ref={containerRef}
+    >
       {/* <motion.span
         className="bottom-0 left-0 mx-auto whitespace-nowrap text-center font-bold uppercase text-black"
         ref={textRef}
         animate={controls}
       >
         CONTACT US
-      </motion.span> */}
+        </motion.span> */}
     </div>
   );
 };

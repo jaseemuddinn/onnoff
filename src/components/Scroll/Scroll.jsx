@@ -1,4 +1,4 @@
-import logo from "../../assets/img/logo_s.png";
+import logo from "../../assets/img/re_logo.jpg";
 import { useTransform, useScroll, motion } from "framer-motion";
 import { useRef } from "react";
 
@@ -72,7 +72,7 @@ const Logo = ({ scrollYProgress }) => {
   
     return (
       <motion.div
-        className="p-8 bg-white rounded-full shadow-2xl"
+        className="p-8 rounded-full shadow-2xl"
         style={{
           opacity,
           scale,
@@ -81,7 +81,7 @@ const Logo = ({ scrollYProgress }) => {
         animate={{ scale: 1 }}
         transition={{ duration: 0.5, delay: 0.5}}
       >
-        <img src={logo} alt="Logo" className="w-25" />
+        <img src={logo} alt="Logo" className="w-72" />
       </motion.div>
     );
   };
